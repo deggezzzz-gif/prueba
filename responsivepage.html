@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Site</title>
+    <link rel="icon" href="icons/Icon-IA.png">
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #2d1e2e;
+        }
+
+        header{
+            background: linear-gradient(135deg, #344abb 0%, #231d29 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1{
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav{
+            background: #333;
+            padding: 1rem;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover{
+            background: #667eea;
+        }
+
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card{
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 60, 255, 0.897);
+            transition: transform 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-5px);
+        }
+
+        .card h3{
+            background-color: #0e1125;
+            border-radius: 15px;
+            color: #00ffff;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        footer{
+            background: #0e1125;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px){
+            header h1{
+                font-size: 1.8rem;
+            }
+
+            nav ul{
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        nav a{
+            display: block;
+            text-align: center;
+        }
+
+        .container{
+            padding: 1rem;
+        }
+
+        .grid{
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        }
+
+        
+
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>3° Desarrollo de Software · 2026</h1>
+        <p></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="responsivepage.html">Inicio</a></li>
+            <li><a href="responsivepage.html">Servicios</a></li>
+            <li><a href="responsivepage.html">Portafolio</a></li>
+            <li><a href="responsivepage.html">Contacto</a></li>
+            <li><a href="tarjetadeperfil.html">Desarrollador Web · Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2 style="padding-left: 417px;">¿Que es Desarrollo de Software?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Somos: Desarrolladores Web</h3>
+                <p>Creamos paginas web y sitios web atractivos que destacan tu marca, tus gustos, tus metas y sueños.</p>
+            </div>
+            <div class="card">
+                <h3>Robotica</h3>
+                <p>Juntamos el Software con el Hardware en Robotica y creacion de proyectos de alto impacto.</p>
+            </div>
+            <div class="card">
+                <h3>Soporte Tecnico</h3>
+                <p>Estrategias, metodos, atajos, enseñanzas, soporte y mucho mas para mantener tu equipo en perfectas condiciones.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 3 Año en Desarrollo de Software · INJU · 2026 · Todos los Derechos Reservados.</p>
+    </footer>
+    
+</body>
+</html>
